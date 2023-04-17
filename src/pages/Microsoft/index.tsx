@@ -12,7 +12,7 @@ export const Microsoft = () => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
-  const [password] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
     if (email && password) {
@@ -37,6 +37,13 @@ export const Microsoft = () => {
             onChange={e => setEmail(e.target.value)}
             placeholder=" Email, telefone ou Skype"
             id="login"
+          />
+          <input
+            type="password"
+            value={password}
+            onChange={e => setPassword(e.target.value)}
+            placeholder="Senha"
+            id="Senha"
           />
           <p>
             Não tem uma conta?
@@ -67,8 +74,10 @@ export const Microsoft = () => {
           </fieldset>
         </C.Form>
         <C.Options>
-          <img src={imageKeyOutline} alt="key" />
-          <h3>Opções de entrada</h3>
+          <div>
+            <img src={imageKeyOutline} alt="key" />
+            <h3>Opções de entrada</h3>
+          </div>
         </C.Options>
       </C.Main>
     </C.Container>

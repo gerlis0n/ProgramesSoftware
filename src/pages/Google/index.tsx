@@ -10,7 +10,7 @@ export const Google = () => {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState('');
-  const [password] = useState('');
+  const [password, setPassword] = useState('');
 
   const handleLogin = async () => {
     if (email && password) {
@@ -43,6 +43,14 @@ export const Google = () => {
               onChange={e => setEmail(e.target.value)}
               placeholder=" Email ou telefone"
               id="email"
+            />
+            
+            <input
+              type="password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              placeholder=" Senha"
+              id="senha"
             />
             <p id="esqueceuEmail">
               Esqueceu seu e-mail ?

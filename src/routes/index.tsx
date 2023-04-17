@@ -6,9 +6,6 @@ import { Nav } from './styles';
 import * as R from '../contexts/Auth/RequireAuth'; //RequireAuth
 import { LoggedIn } from '../pages/LoggedIn';
 import { Home } from '../pages/Home';
-import { Facebook } from '../pages/Facebook';
-import { Microsoft } from '../pages/Microsoft';
-import { Google } from '../pages/Google';
 
 export const Acess = () => {
   return (
@@ -40,9 +37,9 @@ export const Routs = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/LoggedIn" element={<LoggedIn/>} />
-      <Route path="/Facebook" element={<R.AuthFacebook><Facebook /></R.AuthFacebook>} />
-      <Route path="/Google" element={<R.AuthGoogle><Google /></R.AuthGoogle>} />
-      <Route path="/Microsoft" element={<R.AuthMicrosoft><Microsoft /></R.AuthMicrosoft>} />
+      <Route path="/Facebook" element={<R.AuthFacebook><LoggedIn /></R.AuthFacebook>} />
+      <Route path="/Google" element={<R.AuthGoogle><LoggedIn /></R.AuthGoogle>} />
+      <Route path="/Microsoft" element={<R.AuthMicrosoft><LoggedIn /></R.AuthMicrosoft>} />
     </Routes>
   );
 }

@@ -15,7 +15,6 @@ export const Main = styled.div`
   height: 372px;
   display: flex;
   flex-direction: column;
-  align-items: end;
 `;
 
 export const Form = styled.form`
@@ -33,7 +32,7 @@ export const Form = styled.form`
     font-size: 24px;
     line-height: 32px;
   }
-  #login{
+  input {
     padding: 0 8px;
     width: 376px;
     height: 38px;
@@ -90,24 +89,25 @@ export const Form = styled.form`
 `;
 
 export const Options = styled.div`
-  width: 440px;
-  margin-top: 330px;
-  display: flex;
-  align-items: flex-start;
-  padding: 8px 48px;
-  gap: 16px;
-  position: absolute;
-  background: #FFFFFF;
-  box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.1);
-  &:hover {
-    cursor: pointer;
-    background: #eee;
-  }
-  h3{
-    font-size: 14px;
-    line-height: 18px;
+  margin-top: 28px;
+  div{
+    width: 440px;
     display: flex;
-    align-items: center;
-    height: 26px;
+    padding: 8px 48px;
+    gap: 16px;
+    position: absolute;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.1);
+    &:hover {
+      cursor: pointer;
+      background: #eee;
+   }
+    h3{
+      font-size: 14px;
+      line-height: 18px;
+      display: flex;
+      align-items: center;
+      height: 26px;
+    }
   }
 `

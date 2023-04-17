@@ -16,7 +16,6 @@ export const Main = styled.div`
   padding: 0px;
   gap: 16px;
   width: 500px;
-  height: 549px;
 `;
 
 export const Body = styled.div`
@@ -26,7 +25,6 @@ export const Body = styled.div`
   padding: 48px 40px 36px;
   gap: 32px;
   width: 500px;
-  height: 500px;
   background: #FFFFFF;
   border: 1px solid #DADCE0;
   box-shadow: 0px 4px 8px -1px rgba(0, 0, 0, 0.05);
@@ -55,9 +53,8 @@ export const Form = styled.form`
   padding: 0px 40px;
   gap: 16px;
   width: 500px;
-  #email {
-    padding: 0px 12px;
-    height: 56px;
+  input {
+    padding: 15px 12px;
     border: 1px solid rgba(30, 36, 50, 0.23);
     border-radius: 8px;
     font-weight: 400;
@@ -88,7 +85,7 @@ export const Form = styled.form`
       text-align: right;
       color: #1A73E8;
     }
-    #avancar{
+    input{
       padding: 6px 24px;
       border-radius: 4px;
       background: #1A73E8;
